@@ -9,7 +9,7 @@ pipeline {
         }
         stage('second') {
             steps {
-            	app = docker.build("nginx/hellonode") 
+            	sh 'app = docker.build("nginx/hellonode")'
             }
         }
     }
