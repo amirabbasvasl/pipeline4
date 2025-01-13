@@ -9,7 +9,9 @@ pipeline {
         }
         stage('second') {
             steps {
-            	dockerImage('nginx/hellonode')
+		script {
+			app = docker.build("nginx/helloworld")
+		{
             }
         }
     }
