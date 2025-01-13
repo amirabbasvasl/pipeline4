@@ -9,7 +9,7 @@ pipeline {
         }
         stage('second') {
             steps {
-		sh 'run.sh'
+		sh './run.sh'
             }
         }
     }
