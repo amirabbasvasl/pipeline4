@@ -9,9 +9,7 @@ pipeline {
         }
         stage('second') {
             steps {
-		script {
-			app = docker.build("nginx/helloworld")
-		}
+		sh 'run.sh'
             }
         }
     }
