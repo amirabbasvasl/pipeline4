@@ -11,7 +11,7 @@ pipeline {
             steps {
 		script {
 			app = docker.build("nginx/helloworld")
-		{
+		}
             }
         }
     }
